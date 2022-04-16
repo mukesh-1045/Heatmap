@@ -59,8 +59,7 @@ export class AppComponent {
 
   ngOnInit() {
     let loader = new Loader({
-      apiKey:
-        "AIzaSyCfrf0VhiZxjMB_moxot6BI1q0JoVfPpRI" + "&libraries=visualization",
+      apiKey: "API_KEY" + "&libraries=visualization",
       // libraries: "visualization",
     });
 

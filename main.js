@@ -36,7 +36,7 @@ const port = process.env.Port || 8080;
 
 //   // Optional depending on the providers
 //   // fetch: customFetchImplementation,
-//   apiKey: 'AIzaSyCfrf0VhiZxjMB_moxot6BI1q0JoVfPpRI', // for Mapquest, OpenCage, Google Premier
+//   apiKey: 'API KEY', // for Mapquest, OpenCage, Google Premier
 //   formatter: null // 'gpx', 'string', ...
 // };
 
@@ -75,7 +75,7 @@ app.get("/getLatnLong", async (req, res, next) => {
     }
   ];
   dataArray.forEach((element) => {
-    // request(`https://thezipcodes.com/api/v1/search?zipCode=${element.zipcode}&countryCode=IN&apiKey=88f370d792f4caa39043b8bb1a43b1b0`, { json: true }, (err, res, body) => {
+    // request(`https://thezipcodes.com/api/v1/search?zipCode=${element.zipcode}&countryCode=IN&apiKey=API KEY`, { json: true }, (err, res, body) => {
     //   if (err) { return console.log(err); }
     //   console.log(body);
     //   element.lat = body.location[0].latitude;
@@ -88,7 +88,7 @@ app.get("/getLatnLong", async (req, res, next) => {
 });
 
 function getLatnLongByZipCode(zipcode) {
-  request(`https://thezipcodes.com/api/v1/search?zipCode=${zipcode}&countryCode=IN&apiKey=88f370d792f4caa39043b8bb1a43b1b0`, { json: true }, (err, res, body) => {
+  request(`https://thezipcodes.com/api/v1/search?zipCode=${zipcode}&countryCode=IN&apiKey=API KEY`, { json: true }, (err, res, body) => {
     if (err) { return console.log(err); }
     console.log(body);
     return body;

@@ -12,7 +12,7 @@ import { AgmCoreModule } from "@agm/core";
     AppRoutingModule,
     // AgmCoreModule.forRoot({
     //   apiKey:
-    //     "AIzaSyCfrf0VhiZxjMB_moxot6BI1q0JoVfPpRI" + "&libraries=visualization",
+    //     "API KEY" + "&libraries=visualization",
     //   libraries: ["visualization"],
     // }),
   ],
